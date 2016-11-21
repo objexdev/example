@@ -1,5 +1,6 @@
 package net.objex.example.jaxrs;
 
+import net.objex.example.jaxrs.net.objex.example.jaxrs.config.ApplicationConfig;
 import org.apache.cxf.transport.servlet.CXFServlet;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;

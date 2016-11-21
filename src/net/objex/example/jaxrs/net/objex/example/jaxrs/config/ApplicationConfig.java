@@ -5,9 +5,7 @@ import java.util.Arrays;
 
 import javax.ws.rs.ext.RuntimeDelegate;
 
-import net.objex.example.jaxrs.JaxRsApiApplication;
 import net.objex.example.jaxrs.ProductService;
-import net.objex.example.jaxrs.net.objex.example.jaxrs.config.InMemorySecurityConfig;
 import org.apache.cxf.bus.spring.SpringBus;
 import org.apache.cxf.endpoint.Server;
 import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
