@@ -13,18 +13,11 @@ java -jar target/simple-jaxrs-1.jar
 
 ##Test Persistence
 
-Save (saves a list of products)
-curl -u user:password http://localhost:8080/simple-jaxrs/prodcut/save
-List all products
-curl user:password http://localhost:8080/simple-jaxrs/prodcut/all
+Save Products: curl -u user:password http://localhost:8080/simple-jaxrs/prodcut/save
+List products: curl user:password http://localhost:8080/simple-jaxrs/prodcut/all
+Product details: curl user:password http://localhost:8080/simple-jaxrs/prodcut/1
 
-Product details
-curl user:password http://localhost:8080/simple-jaxrs/prodcut/1
+##REST Service Security - Test with or without credentials
 
-REST Service Security - Test with or without credentials
-
-HTTP/200
-curl -u user:password http://localhost:8080/simple-jaxrs/prodcut/list
-
-HTTP/401
-curl http://localhost:8080/simple-jaxrs/product/list
+HTTP/200: curl -u user:password http://localhost:8080/simple-jaxrs/prodcut/list
+HTTP/401: curl http://localhost:8080/simple-jaxrs/product/list
