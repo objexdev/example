@@ -32,5 +32,16 @@ public class Server {
         server.setHandler( context );
         server.start();
         server.join();
+
+        // database
+        try {
+            Class.forName("org.apache.derby.jdbc.ClientDriver").newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }

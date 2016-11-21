@@ -26,7 +26,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.example.Starter</mainClass>
+                  <mainClass>net.objex.example.jaxrs.Server</mainClass>
                 </transformer>
                 <transformer>
                   <resource>META-INF/cxf/bus-extensions.txt</resource>
@@ -51,9 +51,11 @@
     </plugins>
   </build>
   <properties>
+    <hibernate.version>4.1.4.Final</hibernate.version>
     <org.springframework.version>4.1.0.RELEASE</org.springframework.version>
     <org.eclipse.jetty.version>9.2.2.v20140723</org.eclipse.jetty.version>
     <org.apache.cxf.version>3.0.1</org.apache.cxf.version>
+    <hsqldb.version>2.3.2</hsqldb.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <org.springsecurity.version>3.2.5.RELEASE</org.springsecurity.version>
   </properties>
