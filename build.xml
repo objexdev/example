@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<project name="simple-jaxrs" default="war">
+
+    <path id="compile.classpath">
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="init">
+        <echo message="Building the application."/>
+        <mkdir dir="build/classes"/>
+        <mkdir dir="dist" />
+    </target>
+
+    <target name="compile" depends="init" >
+        <javac destdir="build/classes" debug="true" srcdir="src">
+            <classpath refid="compile.classpath"/>
+        </javac>
+    </target>
+
+    <target name="war" depends="compile">
+        <war destfile="dist/simple-jaxrs.war" needxmlfile="false">
+            <!-- <fileset dir="WebContent"/> -->
+            <lib dir="lib"/>
+            <classes dir="build/classes"/>
+        </war>
+        <echo message="War file created !!"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="dist" />
+        <delete dir="build" />
+    </target>
+
+</project>

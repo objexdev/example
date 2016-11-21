@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customLauncherEnabled" value="true" />
+    <option name="customLauncherPath" value="/Javasphere/play/play-2.2.6/framework/sbt/sbt-launch.jar" />
+  </component>
+</project>
